@@ -408,7 +408,7 @@ footer{
 
 .dekstop-doorway{
     display: flex;
-    /* overflow: auto; */
+    overflow: auto;
     gap: 20px;
     padding: 10px 20px 10px 20px;
     position: relative;
@@ -443,19 +443,36 @@ width: 95%;
     transform: scaleX(-1);
 }
 
-.new-carousel{
-    display: flex;
-    overflow: auto;
-    gap: 25px;
-    padding: 25px 50px;
-    background-color: #ffeed9;
+.new-carousel-container {
+    overflow: hidden; 
+    width: 100vw; 
+    background-color: #ffeed9; 
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.new-carousel img{
-    height: 420px;
+.new-carousel {
+    display: flex;
+    gap: 25px;
+    padding: 25px 50px;
+    animation: slide 30s linear infinite;
+    width: 200%; 
 }
+
+.new-carousel img {
+    height: 420px;
+    flex: 0 0 auto; 
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
+
 
 .new-in img{
     width: 97%;
