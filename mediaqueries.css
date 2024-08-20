@@ -1,0 +1,26 @@
+
+
+@media screen and (max-width : 1024px){
+    .column-footer-2{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 813px) {
+    .nav-bar , .svg-india{
+        display: none;
+    }
+    .nav-bar-mobile{
+        display: block;
+    }
+    .mobile-options-category{
+        margin-top: 45px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width : 550px) {
+    footer ,.page-top{
+        display: none;
+    }
+}
