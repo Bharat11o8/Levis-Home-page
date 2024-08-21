@@ -113,49 +113,64 @@ textarea:focus, input:focus{
     border-bottom: 2px solid black;
 }
 
-.image-section , .image-section-1{
+.image-section{
   width: 100%;
   display: flex;
   overflow: hidden;
 }
 
-.images-1 , .images-1-1 {
+.images-1{
   display: flex;
-  transition: transform 1s ease;
+  transition: transform 1s ease-in-out;
 }
 
-.images , .images-2 {
+.images{
   min-width: 100%;
 }
 
-.images img , .images-2 img {
+.images img{
   width: 100%;
   display: block;
+  object-fit: cover;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
-  
+
+input[type="radio"] {
+    display: none;
+}
 
 .button-radio{
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding:10px 0px ;
+    padding:10px 10px ;
 }
 
 .button-1-1{
     border: 1px solid #333333;
-    height: 13px;
-    width: 13px;
     border-radius: 100%;
     background: transparent;
     cursor: pointer;
+    padding: 1px 10px;
 }
 
 .button-1-1:hover{
     background-color: #333333;
+}
+
+input#image1:checked ~ .images-1 {
+    transform: translateX(0%);
+}
+
+input#image2:checked ~ .images-1 {
+    transform: translateX(-100%);
+}
+
+input#image3:checked ~ .images-1 {
+    transform: translateX(-200%);
 }
 
 .dont-miss-out{
@@ -311,6 +326,16 @@ footer{
     height: 10px;
 }
 
+.jeans-so-good-1{
+    display: flex;
+    overflow: auto;
+    max-width: 100%;
+    padding: 20px;
+    gap: 23px;
+}
+.jeans-so-good-1 img{
+    width: 97vw;
+}
 
 .carousel-container{
     margin-top: 10px;
@@ -350,10 +375,6 @@ footer{
 
 .carousel-container{
     overflow: auto;
-}
-
-.images-1-1{
-    overflow: auto !important;
 }
 
 .nav-bar-mobile-1{
@@ -409,7 +430,7 @@ footer{
 .dekstop-doorway{
     display: flex;
     overflow: auto;
-    gap: 20px;
+    gap: 21px;
     padding: 10px 20px 10px 20px;
     position: relative;
     align-items: center ;
@@ -420,11 +441,11 @@ footer{
 }
 
 .dekstop-doorway-button{
-position: absolute;
-display: flex;
-padding: 0px 20px;
-justify-content: space-between;
-width: 95%;
+    position: absolute;
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    width: 95%;
 }
 
 .dekstop-doorway-button-1 , .dekstop-doorway-button-2{ 
@@ -476,8 +497,7 @@ width: 95%;
 
 .new-in img{
     width: 97%;
-    position: relative;
-    padding: 20px 20px;
+    padding: 10px 20px;
 }
 
 .double-new-in{
@@ -485,4 +505,6 @@ width: 95%;
     display: flex;
     gap: 20px;
     padding: 10px 20px;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
