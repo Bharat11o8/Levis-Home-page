@@ -1,35 +1,39 @@
-@media screen and (max-width : 1024px){
-    .column-footer-2{
-        display: none;
-    }
+@media screen and (max-width: 1024px) {
+  .column-footer-2 {
+    display: none;
+  }
 }
 
-@media screen and (max-width : 813px) {
-    .nav-bar , .svg-india ,.double-new-in {
-        display: none;
-    }
-    .nav-bar-mobile{
-        display: block;
-    }
-    .mobile-options-category{
-        margin-top: 45px;
-        display: flex;
-    }
-    .new-in img{
-        width: 100%;
-        padding: 10px 0px;
-    }
+@media screen and (max-width: 813px) {
+  .nav-bar,
+  .svg-india,
+  .double-new-in {
+    display: none;
+  }
+  .nav-bar-mobile {
+    display: block;
+  }
+  .mobile-options-category {
+    margin-top: 45px;
+    display: flex;
+  }
+  .new-in img {
+    width: 100%;
+    padding: 10px 0px;
+  }
 
-    .dekstop-doorway{
-        padding: 10px 0px;
-    }
-    .jeans-so-good-1{
-        padding: 10px 10px;
-    }
+  .dekstop-doorway {
+    padding: 10px 0px;
+  }
+  .jeans-so-good-1 {
+    padding: 10px 10px;
+  }
 }
 
-@media screen and (max-width : 550px) {
- .page-top , .footer-last-row , .footer-column-3{
-        display: none;
-    }
+@media screen and (max-width: 550px) {
+  .page-top,
+  .footer-last-row,
+  .footer-column-3 {
+    display: none;
+  }
 }
